@@ -16,9 +16,9 @@
             <th>Description</th>
             <th>Date Added</th>
         </tr>
-
+    
         {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
-
+    
         {% for product in products %}
             <tr>
                 <td>{{product.name}}</td>
@@ -28,13 +28,13 @@
             </tr>
         {% endfor %}
     </table>
-
+    
     <br />
-
+    
     <a href="{% url 'main:create_product' %}">
         <button>
             Add New Product
         </button>
     </a>
-
+    
 {% endblock content %}
